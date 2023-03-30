@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+:root {
+    --background: #000000;
+    --background_plate: #dddddd;
+    --background_plate_border: #cecece;
+}
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: 'SF Compact Display Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Compact Display Thin'), url('fonts/sf-compact-display-thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Compact Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF Compact Display Medium'), url('fonts/sf-compact-display-medium.woff') format('woff');
+}
+
+.disabled {
+    display: none !important;
+}
+
+.containerHeader {
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar button {
+    margin: 10px;
+}
+
+.containerHeader h1 {
+    font-family: "SF Compact Display Medium";
+    color: #fff;
+    text-align: center;
+    font-size: 100px;
+}
