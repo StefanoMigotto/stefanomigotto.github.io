@@ -1,7 +1,1 @@
-$(document).ready(function() {
-    setInterval(() => {
-        $(".containerHeader").removeClass("disabled");
-    }, 600);
-
-
-});
+$(document).ready(function () {});
