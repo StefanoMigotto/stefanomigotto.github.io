@@ -6,7 +6,13 @@ body{
     overflow-x: hidden;
 }
 
-a,p,span{
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+p,span{
     color: #fff;
     font-family: Inter;
     font-size: 20px;
@@ -14,6 +20,15 @@ a,p,span{
     font-weight: 900;
     line-height: normal;
     text-decoration: none;
+}
+
+h1{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 h2{
@@ -57,6 +72,12 @@ h3{
     border-bottom: solid 5px var(--primary);
 }
 
+.navbar_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .flut_object{
     position: absolute;
     right: -700px;
@@ -86,26 +107,26 @@ h3{
 }
 
 .c_project h2{
-    width: 285px;
+    width: 300px;
 }
 
 .canv_object{
     position: absolute;
     right: 100px;
-    top: 585px;
+    top: 580px;
 }
 
 .c_project svg{
     stroke-width: 6px;
     stroke: #1DC488;
-    width: 485px;
-    height: 408.5px;
+    width: 600px;
+    height: 500px;
     flex-shrink: 0;
 }
 
 .gallery_proj{
     display: flex;
-    width: 1200px;
+    width: auto;
     align-items: flex-start;
     align-content: flex-start;
     gap: 15px;
@@ -133,7 +154,9 @@ h3{
 .container_skill{
     display: flex;
     margin-top: 65px;
-    margin-left: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 .obj_skill svg{
@@ -156,8 +179,11 @@ h3{
     
 }
 
-.skill_item{
+.skill{
     position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 50px;
 }
 
 .content_skill{
@@ -172,7 +198,7 @@ h3{
     border-radius: 50px;
     background: #141013;
     border-radius: 100px;
-    background: linear-gradient(180deg, #BCABB4 0%, #F1EEEF 100%);
+    background: linear-gradient(180deg, var(--action) 0%, #F1EEEF 100%);
     width: 200px;
     height: 10px;
     flex-shrink: 0;
@@ -190,22 +216,101 @@ h3{
 }
 
 .obli_obj{
-    width: 1476.916px;
-    height: 86.87px;
+    z-index: 0;
+    width: calc(100% - -40px);;
+    height: 110px;
     transform: rotate(3deg);
     flex-shrink: 0;
+    background: var(--primary);
+    position: relative;
+    bottom: -120px;
 }
 
 .content_footer{
-    width: 1634px;
-    height: 153px;
+    z-index: 10;
+    text-align: center;
+    width: calc(100% - -40px);
+    height: 100px;
     flex-shrink: 0;
-    background: #87B268;
+    background: var(--primary);
+}
+
+.content_footer h1{
+    position: relative;
+    bottom: 110px;
+    margin-bottom: 0;
+}
+
+.copy_footer p{
+    margin-top: 0;
 }
 
 .copy_footer{
-    width: 1442px;
+    
+    width: calc(100% - -40px);
     height: 56px;
     flex-shrink: 0;
-    background: #87B268;
+    background: var(--primary);
+    text-align: center;
 }
+
+
+i{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    fill: rgba(0, 0, 0, 0.00);
+}
+
+.social{
+    bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin: 10px;
+}
+
+/*tablet*/
+@media screen and (max-width: 992px) {
+    body {
+      border: solid 5px blue;
+    }
+
+    .flut_object{
+        top: -850px ;
+    }
+  }
+  /*phone*/
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+        border: solid 5px olive;
+    }
+
+    .flut_object{
+        top: -900px ;
+    }
+
+    .navbar_content a{
+        margin-bottom: 5px !important;
+    }
+
+    .c_project{
+        margin-top: 250px;
+    }
+
+    .c_project svg{
+        display: none !important;
+    }
+  }
