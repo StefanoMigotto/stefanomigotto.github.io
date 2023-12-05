@@ -313,4 +313,16 @@ i{
     .c_project svg{
         display: none !important;
     }
+    
+    h1{
+        font-size: 90px;
+    }
+
+    .obli_obj{
+        left: -10px;
+    }
+
+    .content_footer{
+        height: 170px;
+    }
   }
