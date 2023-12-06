@@ -12,6 +12,11 @@ a{
     text-decoration: none;
 }
 
+strong{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 button{
     font-family: 'Inter', sans-serif;
     color: #fff;
@@ -63,11 +68,28 @@ h3{
     --action: #BCABB4;
 }
 
+.float_brand{
+    left: -100px;
+    top: -50;
+    position: fixed;
+}
+
+.brand{
+    transform: rotate(270deg);
+}
+
+.brand img{
+    width: 300px;
+    height: 100px;
+}
+
 .ml-100{
     margin-left: 100px;
 }
 
 .navbar{
+    position: relative;
+    z-index: 100;
     display: flex;
     padding: 95px;
 }
@@ -84,6 +106,7 @@ h3{
 }
 
 .flut_object{
+    z-index: -1;
     position: absolute;
     right: -700px;
     top: -760px;
@@ -95,7 +118,11 @@ h3{
     transform: rotate(-41.528deg);
 }
 
-.c_about,.c_project,.c_skill{
+.c_project{
+    padding-top: 10px;
+}
+
+.c_about,.c_project{
     margin-left: 100px;
     margin-top: 80px;
 }
@@ -129,38 +156,45 @@ h3{
     flex-shrink: 0;
 }
 
+.gallery_item{
+    width: 288.75px;
+    height: 288.75px;
+}
+
 .gallery_proj{
     display: flex;
     width: auto;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 15px;
+    gap: 100px;
     flex-wrap: wrap;
     max-width: fit-content;
     margin-right: 55px;
 }
 
-.gallery_item{
+.image_gallery{
     width: 288.75px;
     height: 288.75px;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /*background-blend-mode: luminosity;*/
     background: url('../assets/sample/sample_1.png'), lightgray 50% / cover no-repeat;
 }
 
-.gallery_proj button{
+.desc_proj{
     background-color: var(--primary);
-    border: none;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 20px;
+    padding: 10px;
 }
 
+.desc_proj p{
+    color: #000;
+    font-size: 15px;
+}
 
 .c_skill{
-    margin-top: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .c_skill h2{
@@ -199,7 +233,6 @@ h3{
     position: relative;
     width: 300px;
     height: 250px;
-    margin: 50px;
 }
 
 .content_skill{
@@ -229,47 +262,24 @@ h3{
 /*footer*/
 
 .footer{
+    width: auto;
+    height: auto;
+    background-color: var(--primary);
 }
 
-.obli_obj{
-    z-index: 0;
-    width: calc(100% - -40px);;
-    height: 110px;
-    transform: rotate(3deg);
-    flex-shrink: 0;
-    background: var(--primary);
-    position: relative;
-    bottom: -120px;
-}
 
 .content_footer{
-    z-index: 10;
     text-align: center;
-    width: calc(100% - -40px);
-    height: 100px;
-    flex-shrink: 0;
-    background: var(--primary);
 }
 
 .content_footer h1{
-    position: relative;
-    bottom: 110px;
-    margin-bottom: 0;
+    margin: 10px;
 }
 
-.copy_footer p{
-    margin-top: 0;
+.footer p{
+    margin-bottom: 0px;
+    padding: 10px;
 }
-
-.copy_footer{
-    
-    width: calc(100% - -40px);
-    height: 56px;
-    flex-shrink: 0;
-    background: var(--primary);
-    text-align: center;
-}
-
 
 i{
     width: 30px;
@@ -279,28 +289,19 @@ i{
 }
 
 .social{
-    bottom: 100px;
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .social-item{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;  
     margin: 10px;
+    align-items: center;
 }
 
 @media screen and (max-width: 1400px) {
-    body {
-      /*border: solid 5px green;*/
-    }
 
     .flut_object{
         top: -850px ;
@@ -316,9 +317,6 @@ i{
 
 /*tablet*/
 @media screen and (max-width: 992px) {
-    body {
-      /*border: solid 5px blue;*/
-    }
 
     .flut_object{
         top: -850px ;
@@ -333,10 +331,7 @@ i{
   }
   /*phone*/
   /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    body {
-        /*border: solid 5px olive;*/
-    }
+  @media screen and (max-width: 850px) {
 
     .flut_object{
         top: -900px ;
@@ -367,11 +362,35 @@ i{
         bottom: 80px;
     }
 
-    .obli_obj{
-        left: -10px;
+
+    .canv_object{
+        left: 300px;
     }
 
-    .content_footer{
-        height: 170px;
+    .flut_object{
+        position: sticky;
+    }
+    
+    .flut_object img{
+        right: -250px;
+        top: -450px;
+        transform: rotate(250deg);
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+    }
+
+    .c_project{
+        padding-top: 80px;
+    }
+
+    .float_brand{
+        top: 400px !important;
+    }
+
+    .ml-100{
+        margin: 0;
+        margin-top: 30px;
     }
   }

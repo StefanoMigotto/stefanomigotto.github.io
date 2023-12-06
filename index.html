@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
     <title>Stefano Migotto | Portfolio</title>
     <!--css-->
     <link rel="stylesheet" href="css/style.css" />
@@ -31,25 +31,28 @@
         <img src="./assets/shape_svg/shape_flut.svg" alt="" />
       </div>
       <div class="navbar_content">
-        <a href="#"> <span>ABOUT</span></a>
-        <a href="#"><span>MY PROJECTS</span></a>
-        <a href="#"><span>SKILLS</span></a>
-        <a href="#"><span>CONTATCS</span></a>
+        <a href="#about"> <span>ABOUT</span></a>
+        <a href="#projects"><span>MY PROJECTS</span></a>
+        <a href="#skills"><span>SKILLS</span></a>
+        <a href="#contacts"><span>CONTATCS</span></a>
       </div>
     </div>
     <div class="c_about">
-      <h2>ABOUT</h2>
+      <h2 id="about">ABOUT</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur. Ut egestas sed quis mauris
-        ultrices magna. Sodales sem magna et massa eget tristique fermentum.
-        Vulputate pellentesque hac elit sit dolor metus eget. Malesuada sit cum
-        lacus bibendum in pellentesque sem. Neque gravida quisque aliquet
-        scelerisque pellentesque consectetur nullam eget aliquam. Neque arcu
-        nulla eget consequat ornare id aliquam.
+        Ciao! sono Stefano Migotto, attualmente studente presso <strong>Il consorzio Universitario di Pordenone</strong> sto frequentando <strong>l'ITS Alto Adriatico</strong>.
+        <br>Da sempre un fin da piccolo un <strong>Autodidatta</strong> ho sviluppato diverse competenze su vari ambiti come: l'elettronica, informatica e la meccanica.
+        Ho conseguito il diploma presso l'IPSIA P. Della Valentina, negli ultimi anni scolastici ho potuto sviluppare progetti con <strong>Arduino e sviluppare con i PLC.<br></strong>
+        Con il tempo ho potuto creare attraverso le mie conoscenze diversi progetti!
       </p>
     </div>
+    <div class="float_brand">
+      <div class="brand">
+        <img src="./assets/logo_white.png" alt="">
+      </div>
+    </div>
     <div class="c_project">
-      <h2>MY PROJECTS</h2>
+      <h2 id="projects">MY PROJECTS</h2>
       <div class="canv_object">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -66,18 +69,27 @@
         </svg>
       </div>
       <div class="gallery_proj">
-        <div class="gallery_item"><button>Scopri</button></div>
-        <div class="gallery_item"></div>
-        <div class="gallery_item"></div>
-        <div class="gallery_item"></div>
-        <div class="gallery_item"></div>
-        <div class="gallery_item"></div>
-        <div class="gallery_item"></div>
-        <div class="gallery_item"></div>
-      </div>
+        <div class="gallery_item">
+          <div class="image_gallery"></div>
+          <div class="desc_proj">
+            <p>Gestionale FiveM</p>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <div class="image_gallery"></div>
+          <div class="desc_proj">
+            <p>Sito vetrina <a href="https://fisiokinesislab.it">fisiokinesislab.it</a></p>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <div class="image_gallery"></div>
+          <div class="desc_proj">
+            <p>Sito vetrina ravefer.it</p>
+          </div>
+        </div>
     </div>
     <div class="c_skill">
-      <h2>SKILLS</h2>
+      <h2 id="skills">SKILLS</h2>
       <div class="container_skill">
         <div class="skill">
           <div class="obj_skill">
@@ -113,27 +125,19 @@
           <div class="content_skill">
             <h3>Web Application Front-end</h3>
             <div class="skillbar">
-              <div style="width: 130px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);
-
-              "></div>
+              <div style="width: 130px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);"></div>
             </div>
             <h3>Web Application Back-end</h3>
             <div class="skillbar">
-              <div style="width: 154px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);
-
-              "></div>
+              <div style="width: 154px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);"></div>
             </div>
             <h3>Desktop Application</h3>
             <div class="skillbar">
-              <div style="width: 121px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);
-
-              "></div>
+              <div style="width: 121px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);"></div>
             </div>
             <h3>Mobile Application</h3>
             <div class="skillbar">
-              <div style="width: 60px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);
-
-              "></div>
+              <div style="width: 60px; background: linear-gradient(180deg, #E9741F 0%, #CEBE2B 100%);"></div>
             </div>
           </div>
         </div>
@@ -158,9 +162,8 @@
       </div>
     </div>
     <div class="footer">
-      <div class="obli_obj"></div>
       <div class="content_footer">
-        <h1>CONTACTS</h1>
+        <h1 id="contacts">CONTACTS</h1>
         <div class="social">
           <div class="social-item">
             <div class="logo-social"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -191,12 +194,12 @@
             <div class="logo-social"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
               <path d="M25.3125 1.875H4.6875C3.94158 1.875 3.22621 2.17132 2.69876 2.69876C2.17132 3.22621 1.875 3.94158 1.875 4.6875L1.875 25.3125C1.875 26.0584 2.17132 26.7738 2.69876 27.3012C3.22621 27.8287 3.94158 28.125 4.6875 28.125H25.3125C26.0584 28.125 26.7738 27.8287 27.3012 27.3012C27.8287 26.7738 28.125 26.0584 28.125 25.3125V4.6875C28.125 3.94158 27.8287 3.22621 27.3012 2.69876C26.7738 2.17132 26.0584 1.875 25.3125 1.875ZM24.3521 19.885L23.4732 23.6936C23.4286 23.8872 23.3197 24.06 23.1642 24.1837C23.0087 24.3075 22.8159 24.3749 22.6172 24.375C13.2422 24.375 5.625 16.7748 5.625 7.38281C5.63197 7.18597 5.70194 6.99656 5.82462 6.84246C5.94729 6.68836 6.11618 6.57769 6.30645 6.52676L10.115 5.64785C10.18 5.63411 10.2461 5.62646 10.3125 5.625C10.4825 5.63358 10.647 5.6875 10.7891 5.78116C10.9312 5.87482 11.0456 6.0048 11.1205 6.15762L12.8783 10.2592C12.9214 10.3698 12.9453 10.4869 12.9492 10.6055C12.9349 10.8656 12.8192 11.1099 12.627 11.2857L10.4068 13.1021C11.752 15.9533 14.0467 18.248 16.8979 19.5932L18.7143 17.373C18.8901 17.1808 19.1343 17.0651 19.3945 17.0508C19.5131 17.0546 19.6302 17.0786 19.7408 17.1217L23.8424 18.8795C23.9953 18.9543 24.1253 19.0687 24.219 19.2108C24.3127 19.3529 24.3665 19.5175 24.375 19.6875C24.3738 19.7539 24.3662 19.82 24.3521 19.885Z" fill="black"/>
             </svg></div>
-            <div class="txt-social">39+ 389-6106603</div>
+            <div class="txt-social">+39 389-6106603</div>
           </div>
+          
         </div>
-      </div>
-      <div class="copy_footer">
-        <p>&copy; 2023 - 2023 stefanomigotto.github.io</p>
+        <p>&copy; 2023 - stefanomigotto.github.io</p>
+        
       </div>
     </div>
   </body>
