@@ -175,12 +175,15 @@ h3{
 .image_gallery{
     width: 288.75px;
     height: 288.75px;
+    object-fit: cover;
+    background-position: center;
     flex-shrink: 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     /*background-blend-mode: luminosity;*/
-    background: url('../assets/sample/sample_1.png'), lightgray 50% / cover no-repeat;
 }
+
+
 
 .desc_proj{
     background-color: var(--primary);
