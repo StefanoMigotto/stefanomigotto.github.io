@@ -116,7 +116,18 @@ h3{
     padding: 95px;
 }
 
+.navbar span:hover{
+    transition: all 0.2s;
+    color: var(--primary);
+}
+
+.navbar span{
+    transition: all 0.5s;
+    color: #fff;
+}
+
 .navbar a{
+    transition: all 0.5s;
     margin: 10px;
     border-bottom: solid 5px var(--primary);
 }
