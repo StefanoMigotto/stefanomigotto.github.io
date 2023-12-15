@@ -19,37 +19,10 @@
     <meta name="revisit-after" content="2 days" />
     <meta name="author" content="Stefano Migotto" />
     <title>Stefano Migotto | Portfolio</title>
-<<<<<<< HEAD
-    <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon//favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicon//site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="assets/favicon//safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-=======
     <!-- Google Analytics -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYXWP1BQLV"></script>
+    
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -57,18 +30,13 @@
     
       gtag('config', 'G-EYXWP1BQLV');
     </script>
->>>>>>> 513c68cd975d15006669a1060f2b04c9587a8dda
     <!--css-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.js"
-      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/loading.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -81,6 +49,9 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <video autoplay loop src="./assets/loading.mp4" alt="">
+    </div>
     <div class="navbar">
       <div class="flut_object">
         <img src="./assets/shape_svg/shape_flut.svg" alt="" />
@@ -133,10 +104,7 @@
         <div class="gallery_item">
           <div
             class="image_gallery"
-            style="
-              background: url('../assets/project_image/ravefer.png'),
-                lightgray 50% / cover no-repeat;
-            "
+            
           ></div>
           <div class="desc_proj">
             <p>Gestionale FiveM</p>
@@ -150,7 +118,8 @@
                 lightgray 50% / cover no-repeat;
             "
           ></div>
-          <div class="desc_proj">
+          <div class="desc_proj"
+          >
             <p>
               Sito vetrina
               <a href="https://fisiokinesislab.it">fisiokinesislab.it</a>
@@ -158,7 +127,10 @@
           </div>
         </div>
         <div class="gallery_item">
-          <div class="image_gallery"></div>
+          <div class="image_gallery" style="
+          background: url('../assets/project_image/ravefer.png'),
+            lightgray 50% / cover no-repeat;
+        "></div>
           <div class="desc_proj">
             <p>Sito vetrina ravefer.it</p>
           </div>
@@ -487,4 +459,5 @@
     charset="UTF-8"
     async
   ></script>
+  
 </html>
