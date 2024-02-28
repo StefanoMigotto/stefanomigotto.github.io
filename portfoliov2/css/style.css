@@ -110,6 +110,15 @@ html{
   font-style: italic;
 }
 
+.disabled{
+  display: none;
+}
+
+.activeFilter{
+  color: #000 !important;
+  background-color: #a6cd7f !important;
+}
+
 main {
   margin: 0 auto;
   width: 1400px;
