@@ -129,10 +129,17 @@ main {
     margin: 10px;
     width: 800px;
   }
+
+}
+
+@media screen and (max-width: 500px){
+  .containerContacts ul li{
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  main {
+  main,footer {
     margin: 10px;
     width: 600px;
   }
@@ -161,7 +168,7 @@ main {
   }
 
   main{
-    width: 50vb;
+    width: 40vb;
   }
 
   .containerAbout{
@@ -179,4 +186,10 @@ main {
     display: flex;
     justify-content: center;
   }
+
+
 }
+
+/*main{
+  width: auto !important;
+}*/

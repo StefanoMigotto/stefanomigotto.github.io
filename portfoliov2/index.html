@@ -1,196 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stefano Migotto | Portfolio</title>
-    <!--Css-->
-    <link rel="stylesheet" href="css/style.css" />
-    <!--Scripts-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/tailwind.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!--Icons-->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  </head>
-  <body class="bg-background">
-    <nav
-      class="font-['Oswald'] text-white flex justify-between p-2 h-24 items-center"
-    >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stefano Migotto | Portfolio</title>
+  <!--Css-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--Scripts-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!--Icons-->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body class="bg-background">
+  <nav class="font-['Oswald'] text-white flex justify-between p-2 h-24 items-center">
+    <div>
+      <h1 class="ml-10 text-xl">Stefano Migotto/</h1>
+    </div>
+    <div>
+      <ul>
+        <li class="inline-block text-xl mr-10">Home</li>
+        <li class="inline-block text-xl mr-10">About me</li>
+        <li class="inline-block text-xl mr-10">Works</li>
+        <li class="inline-block text-xl mr-10">Contacts</li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="text-white flex justify-between containerWelcome items-center md:bg-red">
       <div>
-        <h1 class="ml-10 text-xl">Stefano Migotto/</h1>
-      </div>
-      <div>
-        <ul>
-          <li class="inline-block text-xl mr-10">Home</li>
-          <li class="inline-block text-xl mr-10">About me</li>
-          <li class="inline-block text-xl mr-10">Works</li>
-          <li class="inline-block text-xl mr-10">Contacts</li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="text-white flex justify-between containerWelcome items-center md:bg-red">
         <div>
-          <div>
-            <h1 class="text-6xl font-bold font-['Poppins'] relative z-30">
-              IT <m-t class="text-secondary">Developer</m-t> <br />&
-              <m-t class="text-secondary">Cloud</m-t>
-            </h1>
-          </div>
-          <div class="flex mt-5">
-            <button
-              class="mr-2 bg-secondary transition-all shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full"
-            >
-              My Works
-            </button>
-            <button
-              class="bg-primary shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex"
-            >
-              Download CV
-              <box-icon
-                class="ml-2"
-                name="download"
-                type="solid"
-                color="#ffffff"
-              ></box-icon>
-            </button>
-          </div>
+          <h1 class="text-6xl font-bold font-['Poppins'] relative z-30">
+            IT <m-t class="text-secondary">Developer</m-t> <br />&
+            <m-t class="text-secondary">Cloud</m-t>
+          </h1>
         </div>
-        <div class="max-w-96 relative top-40 right-20">
-          <div class="absolute rotate-45 opacity-5 right-20 bottom-10 z-10">
-            <svg
-              width="500"
-              height="500"
-              viewBox="0 0 200 200"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_231_240)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 49H27.5H28V48.9943C39.6432 48.7286 49 39.207 49 27.5V0H55V28C55 39.598 64.402 49 76 49C87.598 49 97 39.598 97 28V0H103V28C103 39.598 112.402 49 124 49C135.598 49 145 39.598 145 28V0H152V28C152 39.598 161.402 49 173 49H200V55H172C160.402 55 151 64.402 151 76C151 87.598 160.402 97 172 97H200V103H172C160.402 103 151 112.402 151 124C151 135.598 160.402 145 172 145H200V151H173C161.402 151 152 160.402 152 172V173V200H145V172C145 160.402 135.598 151 124 151C112.402 151 103 160.402 103 172V200H97V172C97 160.402 87.598 151 76 151C64.402 151 55 160.402 55 172V200H49V172.5C49 160.793 39.6432 151.271 28 151.006V151H27.5H0V145H28C39.598 145 49 135.598 49 124C49 112.402 39.598 103 28 103L0 103V97L28 97C39.598 97 49 87.598 49 76C49 64.402 39.598 55 28 55L0 55V49ZM76 97C87.598 97 97 87.598 97 76C97 64.402 87.598 55 76 55C64.402 55 55 64.402 55 76C55 87.598 64.402 97 76 97ZM124 97C135.598 97 145 87.598 145 76C145 64.402 135.598 55 124 55C112.402 55 103 64.402 103 76C103 87.598 112.402 97 124 97ZM97 124C97 135.598 87.598 145 76 145C64.402 145 55 135.598 55 124C55 112.402 64.402 103 76 103C87.598 103 97 112.402 97 124ZM124 145C135.598 145 145 135.598 145 124C145 112.402 135.598 103 124 103C112.402 103 103 112.402 103 124C103 135.598 112.402 145 124 145Z"
-                  fill="url(#paint0_linear_231_240)"
-                />
-              </g>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_231_240"
-                  x1="20.5"
-                  y1="16"
-                  x2="100"
-                  y2="200"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#ACAAFF" />
-                  <stop offset="1" stop-color="#C0E8FF" />
-                </linearGradient>
-                <clipPath id="clip0_231_240">
-                  <rect width="200" height="200" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div class="relative z-20 overflow-hidden image_welcome">
-            <img width="600" height="600" src="assets/dev.svg" alt="" />
-          </div>
+        <div class="flex mt-5">
+          <button
+            class="mr-2 bg-secondary transition-all shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full">
+            My Works
+          </button>
+          <button class="bg-primary shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex">
+            Download CV
+            <box-icon class="ml-2" name="download" type="solid" color="#ffffff"></box-icon>
+          </button>
         </div>
       </div>
-      <!--Down Arrow-->
-      <div class="flex justify-center mt-60 containerArrow">
-        <a href="#downArrow">
+      <div class="max-w-96 relative top-40 right-20">
+        <div class="absolute rotate-45 opacity-5 right-20 bottom-10 z-10">
+          <svg width="500" height="500" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_231_240)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 49H27.5H28V48.9943C39.6432 48.7286 49 39.207 49 27.5V0H55V28C55 39.598 64.402 49 76 49C87.598 49 97 39.598 97 28V0H103V28C103 39.598 112.402 49 124 49C135.598 49 145 39.598 145 28V0H152V28C152 39.598 161.402 49 173 49H200V55H172C160.402 55 151 64.402 151 76C151 87.598 160.402 97 172 97H200V103H172C160.402 103 151 112.402 151 124C151 135.598 160.402 145 172 145H200V151H173C161.402 151 152 160.402 152 172V173V200H145V172C145 160.402 135.598 151 124 151C112.402 151 103 160.402 103 172V200H97V172C97 160.402 87.598 151 76 151C64.402 151 55 160.402 55 172V200H49V172.5C49 160.793 39.6432 151.271 28 151.006V151H27.5H0V145H28C39.598 145 49 135.598 49 124C49 112.402 39.598 103 28 103L0 103V97L28 97C39.598 97 49 87.598 49 76C49 64.402 39.598 55 28 55L0 55V49ZM76 97C87.598 97 97 87.598 97 76C97 64.402 87.598 55 76 55C64.402 55 55 64.402 55 76C55 87.598 64.402 97 76 97ZM124 97C135.598 97 145 87.598 145 76C145 64.402 135.598 55 124 55C112.402 55 103 64.402 103 76C103 87.598 112.402 97 124 97ZM97 124C97 135.598 87.598 145 76 145C64.402 145 55 135.598 55 124C55 112.402 64.402 103 76 103C87.598 103 97 112.402 97 124ZM124 145C135.598 145 145 135.598 145 124C145 112.402 135.598 103 124 103C112.402 103 103 112.402 103 124C103 135.598 112.402 145 124 145Z"
+                fill="url(#paint0_linear_231_240)" />
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_231_240" x1="20.5" y1="16" x2="100" y2="200"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ACAAFF" />
+                <stop offset="1" stop-color="#C0E8FF" />
+              </linearGradient>
+              <clipPath id="clip0_231_240">
+                <rect width="200" height="200" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="relative z-20 overflow-hidden image_welcome">
+          <img width="600" height="600" src="assets/dev.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--Down Arrow-->
+    <div class="flex justify-center mt-60 containerArrow">
+      <a href="#downArrow">
         <div class="bg-primary shadow-lg w-14 h-14 hover:bg-gray-900 transition-all">
-          <box-icon
-            class="w-full h-full"
-            name="down-arrow-alt"
-            color="#ffffff"
-          ></box-icon>
+          <box-icon class="w-full h-full" name="down-arrow-alt" color="#ffffff"></box-icon>
         </div>
       </a>
+    </div>
+    <!--About me-->
+    <div id="downArrow" class="font-['Poppins'] mt-48 flex containerAbout justify-between mt-10">
+      <div class="max-w-96 w-full text-white">
+        <h2 class="text-white text-5xl font-bold">
+          About <m-t class="text-secondary">me</m-t>
+        </h2>
+        <p class="text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa
+          iste cum, soluta pariatur eius, consequatur perferendis officia
+          omnis harum commodi mollitia animi assumenda quasi natus dolores nam
+          architecto consequuntur.
+        </p>
       </div>
-      <!--About me-->
-      <div id="downArrow" class="font-['Poppins'] mt-48 flex containerAbout justify-between mt-10">
-        <div class="max-w-96 w-full text-white">
-          <h2 class="text-white text-5xl font-bold">
-            About <m-t class="text-secondary">me</m-t>
-          </h2>
-          <p class="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa
-            iste cum, soluta pariatur eius, consequatur perferendis officia
-            omnis harum commodi mollitia animi assumenda quasi natus dolores nam
-            architecto consequuntur.
-          </p>
-        </div>
-        <div>
-          <img width="400" height="300" src="assets/personal_data.svg" alt="" />
-        </div>
+      <div>
+        <img width="400" height="300" src="assets/personal_data.svg" alt="" />
       </div>
-      <div class="mt-20 relative overflow-hidden relative">
-        <div class="absolute opacity-5 z-0">
-          <svg class="z-0" width="600" height="600" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M165.963 134.037C160.496 139.504 151.631 139.504 146.164 134.037L122.027 109.899C116.559 104.432 116.559 95.5678 122.027 90.1005L146.164 65.9631C151.631 60.4957 160.496 60.4957 165.963 65.9631L190.101 90.1004C195.568 95.5678 195.568 104.432 190.101 109.899L165.963 134.037ZM53.8359 134.037C48.3686 139.504 39.5042 139.504 34.0369 134.037L9.89952 109.899C4.43218 104.432 4.43217 95.5678 9.89951 90.1005L34.0369 65.9631C39.5042 60.4957 48.3686 60.4957 53.8359 65.9631L77.9733 90.1004C83.4406 95.5678 83.4406 104.432 77.9733 109.899L53.8359 134.037ZM109.9 190.1C104.432 195.568 95.5679 195.568 90.1005 190.1L65.9631 165.963C60.4958 160.496 60.4958 151.631 65.9631 146.164L90.1005 122.027C95.5679 116.559 104.432 116.559 109.9 122.027L134.037 146.164C139.504 151.631 139.504 160.496 134.037 165.963L109.9 190.1ZM109.9 77.9732C104.432 83.4405 95.5679 83.4406 90.1005 77.9732L65.9631 53.8358C60.4958 48.3685 60.4958 39.5042 65.9631 34.0368L90.1005 9.89946C95.5679 4.43212 104.432 4.43211 109.9 9.89945L134.037 34.0368C139.504 39.5042 139.504 48.3685 134.037 53.8358L109.9 77.9732Z" fill="url(#paint0_linear_105_379)"/> <defs> <linearGradient id="paint0_linear_105_379" x1="154.166" y1="35.9433" x2="47.2475" y2="144.745" gradientUnits="userSpaceOnUse"> <stop offset="0.0509862" stop-color="#FFB6E1"/> <stop offset="1" stop-color="#FBE3EA"/> </linearGradient> </defs> </svg>
-        </div>
-        <div class="flex flex-col containerWorks relative z-5">
-          <h2 class="text-white text-left text-3xl font-bold font-['Poppins']">
-            My recent <m-t class="text-secondary">works</m-t>
-          </h2>
-          <div class="flex flex-row mt-2">
-            <button onclick="Filter('all')"
-              class="mr-2 bg-primary text-white buttonAll shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full"
-            >
-              All
-            </button>
-            <button onclick="Filter('ui')"
-              class="bg-primary mr-2 buttonUi text-white shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex"
-            >
-              UI
-            </button>
-            <button onclick="Filter('php')"
-              class="bg-primary mr-2 buttonPhp text-white shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex"
-            >
-              PHP
-            </button>
-            <button onclick="Filter('node')"
-              class="bg-primary mr-2 buttonNode text-white shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex"
-            >
-              Node.js
-            </button>
-          </div>
-        </div>
-        <div class="flex flex-wrap imageWork">
-          <div class="bg-primary ui mt-5 m-2 shadow-lg w-64 rounded h-48">
-            <img src="https://placehold.co/400x300" alt="">
-          </div>
-          <div class="bg-primary php mt-5 m-2 shadow-lg w-64 rounded h-48">
-            <img src="https://placehold.co/400x300" alt="">
-          </div>
-          <div class="bg-primary node mt-5 m-2 shadow-lg w-64 rounded h-48">
-            <img src="https://placehold.co/400x300" alt="">
-          </div>
+    </div>
+    <div class="mt-20 relative relative">
+      <div class="absolute opacity-5 z-0 overflow-auto">
+        <svg class="z-0" width="600" height="600" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M165.963 134.037C160.496 139.504 151.631 139.504 146.164 134.037L122.027 109.899C116.559 104.432 116.559 95.5678 122.027 90.1005L146.164 65.9631C151.631 60.4957 160.496 60.4957 165.963 65.9631L190.101 90.1004C195.568 95.5678 195.568 104.432 190.101 109.899L165.963 134.037ZM53.8359 134.037C48.3686 139.504 39.5042 139.504 34.0369 134.037L9.89952 109.899C4.43218 104.432 4.43217 95.5678 9.89951 90.1005L34.0369 65.9631C39.5042 60.4957 48.3686 60.4957 53.8359 65.9631L77.9733 90.1004C83.4406 95.5678 83.4406 104.432 77.9733 109.899L53.8359 134.037ZM109.9 190.1C104.432 195.568 95.5679 195.568 90.1005 190.1L65.9631 165.963C60.4958 160.496 60.4958 151.631 65.9631 146.164L90.1005 122.027C95.5679 116.559 104.432 116.559 109.9 122.027L134.037 146.164C139.504 151.631 139.504 160.496 134.037 165.963L109.9 190.1ZM109.9 77.9732C104.432 83.4405 95.5679 83.4406 90.1005 77.9732L65.9631 53.8358C60.4958 48.3685 60.4958 39.5042 65.9631 34.0368L90.1005 9.89946C95.5679 4.43212 104.432 4.43211 109.9 9.89945L134.037 34.0368C139.504 39.5042 139.504 48.3685 134.037 53.8358L109.9 77.9732Z"
+            fill="url(#paint0_linear_105_379)" />
+          <defs>
+            <linearGradient id="paint0_linear_105_379" x1="154.166" y1="35.9433" x2="47.2475" y2="144.745"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.0509862" stop-color="#FFB6E1" />
+              <stop offset="1" stop-color="#FBE3EA" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="flex flex-col containerWorks relative z-5">
+        <h2 class="text-white text-left text-3xl font-bold font-['Poppins']">
+          My recent <m-t class="text-secondary">works</m-t>
+        </h2>
+        <div class="flex flex-row mt-2">
+          <button onclick="Filter('all')"
+            class="mr-2 bg-primary text-white buttonAll shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full">
+            All
+          </button>
+          <button onclick="Filter('ui')"
+            class="bg-primary mr-2 buttonUi text-white shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex">
+            UI
+          </button>
+          <button onclick="Filter('php')"
+            class="bg-primary mr-2 buttonPhp text-white shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex">
+            PHP
+          </button>
+          <button onclick="Filter('node')"
+            class="bg-primary mr-2 buttonNode text-white shadow-md p-2 pl-5 pr-5 font-medium font-['Poppins'] rounded-full flex">
+            Node.js
+          </button>
         </div>
       </div>
-    </main>
-    <footer>
-        <div>
-          <ul>
-            <li><box-icon name='home' color='#ffffff' ></box-icon> Home</li>
-            <li><box-icon name='user' color='#ffffff'></box-icon> About me</li>
-            <li><box-icon name='phone' color='#ffffff'></box-icon> Contact</li>
-          </ul>
+      <div class="flex flex-wrap imageWork p-10">
+        <div class="bg-primary ui mt-5 m-2 shadow-lg w-64 rounded h-48">
+          <img src="https://placehold.co/400x300" alt="" />
         </div>
-        <div>
-          <ul>
-            <li></li>
-          </ul>
+        <div class="bg-primary php mt-5 m-2 shadow-lg w-64 rounded h-48">
+          <img src="https://placehold.co/400x300" alt="" />
         </div>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+        <div class="bg-primary node mt-5 m-2 shadow-lg w-64 rounded h-48">
+          <img src="https://placehold.co/400x300" alt="" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-white mt-20 w-auto z-12 relative">
+    <div class="flex containerContacts justify-center flex-wrap mb-10">
+      <ul>
+        <li class="inline  ml-6 mr-6 font-[Poppins] font-medium transition-all">
+          <box-icon class="relative top-1" name="home" color="#ffffff"></box-icon>
+          <m-t class="hover:text-secondary transition-all">Home</m-t>
+        </li>
+        <li class="inline ml-6 mr-6 font-[Poppins] font-medium transition-all">
+          <box-icon class="relative top-1" name="user" color="#ffffff"></box-icon>
+          <m-t class="hover:text-secondary transition-all">About me</m-t>
+        </li>
+        <li class="inline ml-6 mr-6 font-[Poppins] font-medium transition-all">
+          <box-icon class="relative top-1" name="phone" color="#ffffff"></box-icon>
+          <m-t class="hover:text-secondary transition-all">Contact</m-t>
+        </li>
+      </ul>
+    </div>
+    <!--<div class="m-2 border-t-2 border-solid border-primary w-auto"></div>-->
+    <div class="flex justify-center items-center">
+      <div class="bg-primary shadow-lg p-2 m-2 rounded-full w-14 h-14 text-center hover:shadow-secondary transition-all">
+        <box-icon class="relative top-2" type="logo" color="#ffffff" name="github"></box-icon>
+      </div>
+      <div class="bg-primary shadow-lg p-2 m-2 rounded-full w-14 h-14 text-center hover:shadow-secondary transition-all">
+        <box-icon class="relative top-2" type="logo" color="#ffffff" name="instagram-alt"></box-icon>
+      </div>
+      <div class="bg-primary shadow-lg p-2 m-2 rounded-full w-14 h-14 text-center hover:shadow-secondary transition-all">
+        <box-icon class="relative top-2" type="logo" color="#ffffff" name="linkedin-square"></box-icon>
+      </div>
+    </div>
+
+    <div class="border-t-2 border-solid border-primary mt-10">
+      <p class="text-sm font-[Poppins] text-gray-400 m-2 ">&copy; 2024 Stefano Migotto all rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
